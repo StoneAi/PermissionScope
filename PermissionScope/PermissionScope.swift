@@ -569,7 +569,7 @@ typealias resultsForConfigClosure     = ([PermissionResult]) -> Void
     This function is called when we want to show the notifications
     alert, kicking off the entire process.
     */
-    func showingNotificationPermission() {
+    @objc func showingNotificationPermission() {
         let notifCenter = NotificationCenter.default
         
         notifCenter
@@ -596,7 +596,7 @@ typealias resultsForConfigClosure     = ([PermissionResult]) -> Void
     See `showingNotificationPermission` for a more detailed description
     of the entire process.
     */
-    func finishedShowingNotificationPermission () {
+    @objc func finishedShowingNotificationPermission () {
         NotificationCenter.default.removeObserver(self,
             name: NSNotification.Name.UIApplicationWillResignActive,
             object: nil)
@@ -1119,7 +1119,7 @@ typealias resultsForConfigClosure     = ([PermissionResult]) -> Void
     /**
     Called when the users taps on the close button.
     */
-    func cancel() {
+   @objc func cancel() {
         self.hide()
         
         if let onCancel = onCancel {
@@ -1205,7 +1205,7 @@ typealias resultsForConfigClosure     = ([PermissionResult]) -> Void
     button to check on a disabled permission. It calls detectAndCallback
     to recheck all the permissions and update the UI.
     */
-    func appForegroundedAfterSettings() {
+    @objc func appForegroundedAfterSettings() {
         NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIApplicationDidBecomeActive, object: nil)
         
         detectAndCallback()
