@@ -19,8 +19,8 @@
 		D05F104D1AD1EBF6000F8267 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D05F104B1AD1EBF6000F8267 /* LaunchScreen.xib */; };
 		D06EDC581B27BB9000D6863A /* PermissionScope.podspec in Resources */ = {isa = PBXBuildFile; fileRef = D06EDC571B27BB9000D6863A /* PermissionScope.podspec */; };
 		D06EDC5A1B27BBB800D6863A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D06EDC591B27BBB800D6863A /* README.md */; };
-		D092BA391AD1E5A300BFC163 /* STPermissionScope.h in Headers */ = {isa = PBXBuildFile; fileRef = D092BA381AD1E5A300BFC163 /* STPermissionScope.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D092BA501AD1E67300BFC163 /* STPermissionScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = D092BA4F1AD1E67300BFC163 /* STPermissionScope.swift */; };
+		D092BA391AD1E5A300BFC163 /* PermissionScope.h in Headers */ = {isa = PBXBuildFile; fileRef = D092BA381AD1E5A300BFC163 /* PermissionScope.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D092BA501AD1E67300BFC163 /* PermissionScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = D092BA4F1AD1E67300BFC163 /* PermissionScope.swift */; };
 		D0A47C091B3DE694000D39E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A47C081B3DE694000D39E2 /* main.m */; };
 		D0A47C0C1B3DE694000D39E2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A47C0B1B3DE694000D39E2 /* AppDelegate.m */; };
 		D0A47C0F1B3DE694000D39E2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A47C0E1B3DE694000D39E2 /* ViewController.m */; };
@@ -89,8 +89,8 @@
 		D06EDC591B27BBB800D6863A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D092BA331AD1E5A300BFC163 /* PermissionScope.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PermissionScope.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D092BA371AD1E5A300BFC163 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D092BA381AD1E5A300BFC163 /* STPermissionScope.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STPermissionScope.h; sourceTree = "<group>"; };
-		D092BA4F1AD1E67300BFC163 /* STPermissionScope.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STPermissionScope.swift; sourceTree = "<group>"; };
+		D092BA381AD1E5A300BFC163 /* PermissionScope.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PermissionScope.h; sourceTree = "<group>"; };
+		D092BA4F1AD1E67300BFC163 /* PermissionScope.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionScope.swift; sourceTree = "<group>"; };
 		D0A47C041B3DE694000D39E2 /* objc-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "objc-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0A47C071B3DE694000D39E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0A47C081B3DE694000D39E2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -156,7 +156,7 @@
 			children = (
 				D06EDC571B27BB9000D6863A /* PermissionScope.podspec */,
 				D06EDC591B27BBB800D6863A /* README.md */,
-				D092BA351AD1E5A300BFC163 /* STPermissionScope */,
+				D092BA351AD1E5A300BFC163 /* PermissionScope */,
 				D05F103F1AD1EBF6000F8267 /* PermissionScope-example */,
 				D0A47C051B3DE694000D39E2 /* objc-example */,
 				D092BA341AD1E5A300BFC163 /* Products */,
@@ -173,18 +173,18 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D092BA351AD1E5A300BFC163 /* STPermissionScope */ = {
+		D092BA351AD1E5A300BFC163 /* PermissionScope */ = {
 			isa = PBXGroup;
 			children = (
-				D092BA381AD1E5A300BFC163 /* STPermissionScope.h */,
-				D092BA4F1AD1E67300BFC163 /* STPermissionScope.swift */,
+				D092BA381AD1E5A300BFC163 /* PermissionScope.h */,
+				D092BA4F1AD1E67300BFC163 /* PermissionScope.swift */,
 				2487CEE41B87B61E00766A1A /* Structs.swift */,
 				244B5BA71B8D5E7900FFA019 /* Permissions.swift */,
 				2487CEE01B87B01E00766A1A /* Extensions.swift */,
 				2487CEE21B87B05200766A1A /* Constants.swift */,
 				D092BA361AD1E5A300BFC163 /* Supporting Files */,
 			);
-			path = STPermissionScope;
+			path = PermissionScope;
 			sourceTree = "<group>";
 		};
 		D092BA361AD1E5A300BFC163 /* Supporting Files */ = {
@@ -227,7 +227,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D092BA391AD1E5A300BFC163 /* STPermissionScope.h in Headers */,
+				D092BA391AD1E5A300BFC163 /* PermissionScope.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,7 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2487CEE51B87B61E00766A1A /* Structs.swift in Sources */,
-				D092BA501AD1E67300BFC163 /* STPermissionScope.swift in Sources */,
+				D092BA501AD1E67300BFC163 /* PermissionScope.swift in Sources */,
 				2487CEE11B87B01E00766A1A /* Extensions.swift in Sources */,
 				244B5BA81B8D5E7900FFA019 /* Permissions.swift in Sources */,
 				2487CEE31B87B05200766A1A /* Constants.swift in Sources */,
