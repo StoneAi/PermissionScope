@@ -156,7 +156,7 @@
 			children = (
 				D06EDC571B27BB9000D6863A /* PermissionScope.podspec */,
 				D06EDC591B27BBB800D6863A /* README.md */,
-				D092BA351AD1E5A300BFC163 /* PermissionScope */,
+				D092BA351AD1E5A300BFC163 /* STPermissionScope */,
 				D05F103F1AD1EBF6000F8267 /* PermissionScope-example */,
 				D0A47C051B3DE694000D39E2 /* objc-example */,
 				D092BA341AD1E5A300BFC163 /* Products */,
@@ -173,7 +173,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D092BA351AD1E5A300BFC163 /* PermissionScope */ = {
+		D092BA351AD1E5A300BFC163 /* STPermissionScope */ = {
 			isa = PBXGroup;
 			children = (
 				D092BA381AD1E5A300BFC163 /* PermissionScope.h */,
@@ -184,7 +184,7 @@
 				2487CEE21B87B05200766A1A /* Constants.swift */,
 				D092BA361AD1E5A300BFC163 /* Supporting Files */,
 			);
-			path = PermissionScope;
+			path = STPermissionScope;
 			sourceTree = "<group>";
 		};
 		D092BA361AD1E5A300BFC163 /* Supporting Files */ = {
